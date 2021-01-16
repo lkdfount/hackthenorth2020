@@ -5,8 +5,8 @@
     "manifest_version" : 2,
     "content_scripts" : [
     {
-        "matches": ["https://www.facebook.com/*", "https://www.instagram.com/*", "https://twitter.com/*"],
-        "js": ["content.js"]
+        "matches": ["https://facebook.com/*", "https://www.instagram.com/*", "https://twitter.com/*"],
+        "js": ["contentScript.js"]
     }
 ]
 }
