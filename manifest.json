@@ -10,7 +10,7 @@
  	},
  	"content_scripts" : [
     {
-        "matches": ["https://www.facebook.com/*", "https://www.instagram.com/*", "https://twitter.com/*", "https://www.zannavandijk.co.uk/about/"],
+        "matches": ["https://www.facebook.com/*", "https://www.instagram.com/*", "https://twitter.com/*"],
         "js": ["contentScript.js"]
     }]
 

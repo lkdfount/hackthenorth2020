@@ -1,9 +1,10 @@
 const FIND = "New York Times";
+const FIND2 = "Biden";
 const contents = document.querySelectorAll('a,p,li,span,h1,h2,h3,h4,h5,h6,div');
 for(const snippet of contents){
 	if (snippet.firstChild!== null){
 		if (snippet.firstChild.nodeValue!== null){
-		    if (snippet.firstChild.nodeValue.includes(FIND)){
+		    if (snippet.firstChild.nodeValue.includes(FIND) || snippet.firstChild.nodeValue.includes(FIND2)){
 			  	console.log(snippet.firstChild.nodeValue);
 			  	snippet.style.color = "#B62352";
 			  	snippet.style.fontWeight = "bold";
