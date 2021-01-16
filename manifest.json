@@ -1,0 +1,12 @@
+{
+    "name":"test",
+    "description": "Project for HackTheNorth 2020",
+    "version": "1",
+    "manifest_version" : 2,
+    "content_scripts" : [
+    {
+        "matches": ["https://www.facebook.com/*", "https://www.instagram.com/*", "https://twitter.com/*"],
+        "js": ["content.js"]
+    }
+]
+}
