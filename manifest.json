@@ -1,12 +1,17 @@
 {
-    "name":"test",
+    "name":"BiasBuddy",
     "description": "Project for HackTheNorth 2020",
-    "version": "1",
+    "version": "0.1",
     "manifest_version" : 2,
-    "content_scripts" : [
+
+    "browser_action":	
     {
-        "matches": ["https://www.facebook.com/*", "https://www.instagram.com/*", "https://twitter.com/*"],
-        "js": ["contentScript.js", "content.js"]
-    }
-]
+        "default_popup": "popup.html"
+ 	},
+ 	"content_scripts" : [
+    {
+        "matches": ["https://www.facebook.com/*", "https://www.instagram.com/*", "https://twitter.com/*", "https://www.zannavandijk.co.uk/about/"],
+        "js": ["contentScript.js"]
+    }]
+
 }
